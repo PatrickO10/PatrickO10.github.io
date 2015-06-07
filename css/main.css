@@ -1,0 +1,52 @@
+body {
+    background: #faebd7;
+}
+
+nav {
+    background: #fff;
+}
+
+footer {
+	background: #294860;
+	height: 400px;
+}
+
+a {
+    color: #000;
+}
+
+/* logo */
+figure {
+    margin: 10px 0 10px 0;
+    padding: 0;
+}
+
+.circle {
+	border-radius: 50%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+}
+
+.primary-header {
+    background: #f0f8ff;
+    height: 400px;
+}
+
+.menu-item {
+    padding: 5px;
+    display: block;
+    font: 3em Fantasy;
+}
+
+.featured-works {
+	background: #1199c3;
+	height: 400px;
+}
