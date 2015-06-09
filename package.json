@@ -1,0 +1,25 @@
+{
+  "name": "profile",
+  "version": "1.0.0",
+  "description": "Profile featuring projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PatrickO10/profile.git"
+  },
+  "keywords": [
+    "profile"
+  ],
+  "author": "Patrick Orth <patrickorth10@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PatrickO10/profile/issues"
+  },
+  "homepage": "https://github.com/PatrickO10/profile",
+  "dependencies": {
+    "gulp": "^3.9.0"
+  }
+}

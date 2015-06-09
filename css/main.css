@@ -17,15 +17,7 @@ nav {
     background: orange;
     color: #fff;
 }
-/*
-.menu-link {
-	color: #294860;
-}
 
-.menu-link:hover {
-	color: #fff;
-}
-*/
 footer {
     background: #294860;
     height: 400px;
@@ -70,3 +62,8 @@ li {
     background: #1199c3;
 }
 
+@media only screen and (max-width: 670px) {
+    .menu-item {
+        font: 1em Serif;
+    }
+}
