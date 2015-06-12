@@ -15,10 +15,10 @@
         <!-- nav -->
         <nav class="row">
             <ul class="col-xs-12">
-                <li class="menu-item"><a href="#about">About Me</a></li>
-                <li class="menu-item"><a href="#projects">Projects</a></li>
-                <li class="menu-item"><a href="#education">Education</a></li>
-                <li class="menu-item"><a href="#work-experience">Work Experence</a></li>
+                <li class="menu-item"><a href="#">About Me</a></li>
+                <li class="menu-item"><a href="#">Projects</a></li>
+                <li class="menu-item"><a href="#">Contact</a></li>
+                <li class="menu-item"><a href="#">Blog</a></li>
             </ul>
         </nav>
         <!-- /nav -->
@@ -26,7 +26,7 @@
         <header class="row primary-header">
             <section class="col-xs-12 text-center">
                 <h1>Patrick Orth</h1>
-                <h4>Front-End/Full-Stack Wizard in Training</h4>
+                <h4>Front-End/Full Stack Wizard in Training</h4>
             </section>
             <!-- /section -->
             <figure class="col-xs-12 col-sm-4 text-center">
@@ -35,43 +35,30 @@
             </figure>
             <section class="col-xs-12 col-sm-8 text-primary">
                 <p>Web development allows me to solve puzzles, think differently and have fun everyday! </p>
-                <p>I'm currently learning full stack web development through Udacity's Full Stack Nanodegree program, learning tech skills industry leaders want.</p>
+                <p>I'm currently learning full stack web development through Udacity's Full Stack Nanodegree
+                    <br>program, learning tech skills industry leaders want.</p>
                 <h3>Techincal Skills:</h3>
                 <p><strong>Languages</strong>: JavaScript, HTML5, CSS3, Python.</p>
-                <p><strong>Frameworks/Libraries</strong>: jQuery, Knockout.js (MVVM), Bootstrap, Jasmine, Gulp.</p>
+                <p><strong>Frameworks/Libraries</strong>: jQuery, Knockout.js (MVVM), Backbone.js (MV*), Bootstrap, Jasmine, Gulp.</p>
                 <p><strong>Other</strong>: Git/GitHub, Sublime.</p>
             </section>
         </header>
         <!-- /header -->
         <!-- main -->
-        <main class="featured-works row">
+        <main class="row">
             <header class="row">
                 <h2 class="col-xs-12">Featured Works</h2>
             </header>
             <!-- /header -->
-            <div class="row">
-                <article class="col-xs-4">
-                    <h4>Project 1</h4>
-                </article>
-                <article class="col-xs-4">
-                    <h4>Project 2</h4>
-                </article>
-                <article class="col-xs-4">
-                    <h4>Project 3</h4>
-                </article>
-            </div>
-            <div class="row">
-                <article class="col-xs-4">
-                    <h4>Project 4</h4>
-                </article>
-                <article class="col-xs-4">
-                    <h4>Project 5</h4>
-                </article>
-                <article class="col-xs-4">
-                    <h4>Project 6</h4>
-                </article>
-            </div>
+            <section class="row text-center projects">
             </section>
+            <script id="project-template" type="text-template">
+                <img src="<%- image %>" alt="<%- title %> image" class="center-block img-responsive">
+                <h4><%- title %></h4>
+                <p>
+                    <%- description %>
+                </p>
+            </script>
         </main>
         <!-- main end -->
         <!-- footer -->
@@ -79,6 +66,14 @@
         </footer>
         <!-- footer end -->
     </div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/underscore/underscore-min.js"></script>
+    <script src="bower_components/backbone/backbone.js"></script>
+    <script src="js/models/project.js"></script>
+    <script src="js/collections/project-list.js"></script>
+    <script src="js/views/project-view.js"></script>
+    <script src="js/views/list-view.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
