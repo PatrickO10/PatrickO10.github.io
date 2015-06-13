@@ -9,19 +9,13 @@ nav {
 
 .menu-item {
     display: inline-block;
-    padding: 15px 50px 15px 50px;
+    padding: 1em 2em 1em 2em;
     font: 2em Serif;
 }
 
 .menu-item:hover {
     background: orange;
     color: #fff;
-}
-
-@media only screen and (max-width: 670px) {
-    .menu-item {
-        font: 1em "Open Sans" Serif;
-    }
 }
 
 ul {
@@ -50,20 +44,51 @@ figure {
 
 .circle {
     border-radius: 50%;
+    box-shadow: -1px 6px 36px 0 rgba(0, 0, 0, 0.75);
 }
 /* Main */
 
 main {
     background: #1199c3;
+    padding-bottom: 2em;
 }
-/* featured-works */
+/* Featured-works */
 
-.le {
-    padding-left: 50px;
+.featured-header {
+    padding-left: 4em;
 }
+/* Projects */
+
+.projects {
+    margin: 2em;
+}
+
+.card {
+    padding: 1em;
+    margin: 1em 2em 1em 8em;
+    border: 1.5em solid #fff;
+    border-radius: 3em;
+
+    -webkit-box-shadow: 13px 16px 6px 0 rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 13px 16px 6px 0 rgba(0, 0, 0, 0.75);
+    box-shadow: 13px 16px 6px 0 rgba(0, 0, 0, 0.75);
+
+}
+
 /* Footer */
 
 footer {
     background: #294860;
     height: 400px;
+}
+/* Media Queries */
+
+@media only screen and (max-width: 670px) {
+    .menu-item {
+        font: 1em "Open Sans" Serif;
+    }
+
+    .card {
+        margin: 1em 0 1em 0;
+    }
 }

@@ -47,17 +47,19 @@
         <!-- main -->
         <main class="row">
             <header class="row">
-                <h2 class="col-xs-12">Featured Works</h2>
+                <div class="col-xs-12 featured-header">
+                    <h2>Featured Works</h2>
+                </div>
             </header>
             <!-- /header -->
             <section class="row text-center projects">
             </section>
             <script id="project-template" type="text-template">
-                <img src="<%- image %>" alt="<%- title %> image" class="center-block img-responsive">
+                <img src=<%- image %> alt="<%- title %> image" class="center-block img-responsive">
                 <h4><%- title %></h4>
-                <p>
-                    <%- description %>
-                </p>
+                <a href=<%- url %> target="_blank">
+                    <%- url %>
+                </a>
             </script>
         </main>
         <!-- main end -->

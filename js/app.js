@@ -5,28 +5,28 @@ $(function() {
 
     var projects = [{
         title: 'Neighborhood Map',
-        image: 'http://placekitten.com/g/120/120',
-        description: 'This is the police speaking.  This club is closed. FOREVER!'
+        image: 'http://placehold.it/300x200',
+        url: 'https://patricko10.github.io/neighborhood-map'
     }, {
         title: 'Feed Reader Testing',
-        image: 'http://placekitten.com/g/120/120',
-        description: 'This is the police speaking.  This club is closed. FOREVER!'
+        image: 'http://placehold.it/300x200',
+        url: 'https://patricko10.github.io'
     }, {
         title: 'Frogger Arcade',
-        image: 'http://placekitten.com/g/120/120',
-        description: 'This is the police speaking.  This club is closed. FOREVER!'
+        image: 'http://placehold.it/300x200',
+        url: 'https://patricko10.github.io/froggerArcade'
     }, {
         title: 'Website Optimization',
-        image: 'http://placekitten.com/g/120/120',
-        description: 'This is the police speaking.  This club is closed. FOREVER!'
+        image: 'http://placehold.it/300x200',
+        url: 'https://patricko10.github.io'
     }, {
         title: 'Interactive Resume',
-        image: 'http://placekitten.com/g/120/120',
-        description: 'This is the police speaking.  This club is closed. FOREVER!'
+        image: 'http://placehold.it/300x200',
+        url: 'https://patricko10.github.io/interactive-resume'
     }, {
         title: 'Mock Portfolio',
-        image: 'http://placekitten.com/g/120/120',
-        description: 'This is the police speaking.  This club is closed. FOREVER!'
+        image: 'http://placehold.it/300x200',
+        url: 'https://patricko10.github.io'
     }];
 
     new app.ListView(projects);

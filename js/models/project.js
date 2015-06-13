@@ -8,7 +8,7 @@ var app = app || {};
         defaults: {
             title: '',
             image: '',
-            description: ''
+            url: ''
         },
 
         dump: function() {
