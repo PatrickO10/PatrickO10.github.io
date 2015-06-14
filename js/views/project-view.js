@@ -5,7 +5,7 @@ var app = app || {};
 
     app.ProjectView = Backbone.View.extend({
         tagName: 'article',
-        className: 'card col-xs-12 col-sm-6 col-md-4',
+        className: 'card col-sm-6 col-md-4',
         template: _.template($('#project-template').html()),
 
         render: function() {

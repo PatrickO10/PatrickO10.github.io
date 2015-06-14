@@ -15,56 +15,70 @@
         <!-- nav -->
         <nav class="row">
             <ul class="col-xs-12">
-                <li class="menu-item"><a href="#">About Me</a></li>
-                <li class="menu-item"><a href="#">Projects</a></li>
-                <li class="menu-item"><a href="#">Contact</a></li>
-                <li class="menu-item"><a href="#">Blog</a></li>
+                <a href="#about"><li class="menu-item">About Me</li></a>
+                <a href="#feature"><li class="menu-item">Projects</li></a>
+                <a href="#contact"><li class="menu-item">Contact</li></a>
+                <a href="#"><li class="menu-item">Blog</li></a>
             </ul>
         </nav>
         <!-- /nav -->
         <!-- primary header -->
-        <header class="row primary-header">
+        <header id="about" class="row primary-header">
             <section class="col-xs-12 text-center">
-                <h1>Patrick Orth</h1>
-                <h4>Front-End/Full Stack Wizard in Training</h4>
+                <h1 class="name-font">Patrick Orth</h1>
+                <h4 class="title-font">Front-End/Full Stack Wizard in Training</h4>
             </section>
             <!-- /section -->
             <figure class="col-xs-12 col-sm-4 text-center">
                 <img class="img-responsive center-block circle" src="images/headshot.jpg" alt="my profile picture">
-                <figcaption>Hey! That's me! Why am I in a circle?</figcaption>
+                <figcaption>Hey! That's me! <br>Why am I in a circle?</figcaption>
             </figure>
-            <section class="col-xs-12 col-sm-8 text-primary">
-                <p>Web development allows me to solve puzzles, think differently and have fun everyday! </p>
-                <p>I'm currently learning full stack web development through Udacity's Full Stack Nanodegree
-                    <br>program, learning tech skills industry leaders want.</p>
+            <div class="col-xs-12 col-sm-4 text-primary">
+                <h3>About Me:</h3>
+                <p>Web development allows me to solve puzzles, think differently, creatively and have fun everyday! </p>
+                <p>I finished the <a href="#">Front-End Nanodegree</a> from Udacity and am sharping my skills by learning other frameworks and solo projects. Plus, I'm participating in open source projects.</p>
+                <p>I'm currently learning full stack web development through Udacity's Full Stack Nanodegree program, learning tech skills industry leaders want.</p>
+            </div>
+            <div class="col-xs-12 col-sm-4 text-primary">
                 <h3>Techincal Skills:</h3>
                 <p><strong>Languages</strong>: JavaScript, HTML5, CSS3, Python.</p>
                 <p><strong>Frameworks/Libraries</strong>: jQuery, Knockout.js (MVVM), Backbone.js (MV*), Bootstrap, Jasmine, Gulp.</p>
                 <p><strong>Other</strong>: Git/GitHub, Sublime.</p>
-            </section>
+            </div>
         </header>
         <!-- /header -->
         <!-- main -->
         <main class="row">
-            <header class="row">
-                <div class="col-xs-12 featured-header">
+            <header id="feature">
+                <div class="col-md-12 featured-header">
                     <h2>Featured Works</h2>
+                    <button class="text-primary">Front-End Projects</button>
+                    <button class="text-primary">Full Stack Projects</button>
                 </div>
             </header>
             <!-- /header -->
-            <section class="row text-center projects">
+            <section class="text-center projects">
             </section>
             <script id="project-template" type="text-template">
-                <img src=<%- image %> alt="<%- title %> image" class="center-block img-responsive">
-                <h4><%- title %></h4>
-                <a href=<%- url %> target="_blank">
-                    <%- url %>
+                <img src=<%- image %> alt="
+                <%- title %> image" class="center-block img-responsive">
+                    <h4><%- title %></h4>
+                    <a href=<%- url %> target="_blank">
+                    LINK
                 </a>
             </script>
         </main>
         <!-- main end -->
         <!-- footer -->
-        <footer class="row">
+        <footer id="contact" class="row">
+            <h3>Contact</h3>
+            <hr>
+            <ul>
+                <li>Email</li>
+                <li>LinkedIn</li>
+                <li>Github</li>
+                <li>Twitter</li>
+            </ul>
         </footer>
         <!-- footer end -->
     </div>

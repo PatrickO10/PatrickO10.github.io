@@ -42,15 +42,21 @@ figure {
     padding: 0;
 }
 
+figcaption {
+    margin-top: 1em;
+}
+
 .circle {
     border-radius: 50%;
     box-shadow: -1px 6px 36px 0 rgba(0, 0, 0, 0.75);
 }
+
 /* Main */
 
 main {
-    background: #1199c3;
+    background: #294860;
     padding-bottom: 2em;
+    color: #fff
 }
 /* Featured-works */
 
@@ -68,18 +74,36 @@ main {
     margin: 1em 2em 1em 8em;
     border: 1.5em solid #fff;
     border-radius: 3em;
-
     -webkit-box-shadow: 13px 16px 6px 0 rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 13px 16px 6px 0 rgba(0, 0, 0, 0.75);
     box-shadow: 13px 16px 6px 0 rgba(0, 0, 0, 0.75);
+}
 
+.card:hover {
+    background: orange;
 }
 
 /* Footer */
 
 footer {
-    background: #294860;
-    height: 400px;
+    background: #000;
+}
+
+/* Font Sizes */
+.name-font {
+    font-size: 5em;
+}
+
+p {
+    font-size: 1.4em;
+}
+
+strong {
+    color: firebrick;
+}
+
+h3 {
+    color: #000;
 }
 /* Media Queries */
 
@@ -87,8 +111,15 @@ footer {
     .menu-item {
         font: 1em "Open Sans" Serif;
     }
-
     .card {
         margin: 1em 0 1em 0;
+    }
+
+    .name-font {
+        font-size: 3em;
+    }
+
+    .title-font {
+        font-size: 1em;
     }
 }

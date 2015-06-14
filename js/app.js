@@ -3,7 +3,7 @@ var app = app || {};
 $(function() {
     'use strict';
 
-    var projects = [{
+    var frontEndProjects = [{
         title: 'Neighborhood Map',
         image: 'http://placehold.it/300x200',
         url: 'https://patricko10.github.io/neighborhood-map'
@@ -29,5 +29,5 @@ $(function() {
         url: 'https://patricko10.github.io'
     }];
 
-    new app.ListView(projects);
+    new app.ListView(frontEndProjects);
 });
