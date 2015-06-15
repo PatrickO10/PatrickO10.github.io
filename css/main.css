@@ -32,8 +32,12 @@ a:visited {
 /* Primary Header */
 
 .primary-header {
-    background: #c6dbed;
+    background: #c6dbed url(../images/logo.png) top center / 100% 100% no-repeat;
     color: rgb(157, 5, 5);
+}
+
+.white-fade {
+    background: rgba(255, 255, 255, 0.52);
 }
 /* logo */
 
@@ -50,7 +54,6 @@ figcaption {
     border-radius: 50%;
     box-shadow: -1px 6px 36px 0 rgba(0, 0, 0, 0.75);
 }
-
 /* Main */
 
 main {
@@ -83,13 +86,20 @@ main {
     background: orange;
 }
 
+.img-size {
+    height: 200px;
+}
 /* Footer */
 
 footer {
     background: #000;
 }
 
+.grey {
+    color: #808080;
+}
 /* Font Sizes */
+
 .name-font {
     font-size: 5em;
 }
@@ -114,11 +124,9 @@ h3 {
     .card {
         margin: 1em 0 1em 0;
     }
-
     .name-font {
         font-size: 3em;
     }
-
     .title-font {
         font-size: 1em;
     }

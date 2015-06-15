@@ -5,29 +5,36 @@ $(function() {
 
     var frontEndProjects = [{
         title: 'Neighborhood Map',
-        image: 'http://placehold.it/300x200',
+        image: 'images/nhm.png',
         url: 'https://patricko10.github.io/neighborhood-map'
     }, {
         title: 'Feed Reader Testing',
-        image: 'http://placehold.it/300x200',
-        url: 'https://patricko10.github.io'
+        image: 'images/frtest.png',
+        url: 'http://patricko10.github.io/frontend-nanodegree-feedreader/'
     }, {
         title: 'Frogger Arcade',
-        image: 'http://placehold.it/300x200',
+        image: 'images/frogger.png',
         url: 'https://patricko10.github.io/froggerArcade'
     }, {
         title: 'Website Optimization',
-        image: 'http://placehold.it/300x200',
-        url: 'https://patricko10.github.io'
+        image: 'images/pizza.png',
+        url: 'http://patricko10.github.io/udportfolio/'
     }, {
         title: 'Interactive Resume',
-        image: 'http://placehold.it/300x200',
+        image: 'images/irimg.png',
         url: 'https://patricko10.github.io/interactive-resume'
     }, {
         title: 'Mock Portfolio',
+        image: 'images/mockport.png',
+        url: 'http://patricko10.github.io/pat_orth_portfolio/'
+    }];
+
+    var fullStackProjects = [{
+        title: 'Movie Trailers',
         image: 'http://placehold.it/300x200',
         url: 'https://patricko10.github.io'
     }];
 
-    new app.ListView(frontEndProjects);
+    app.frontEndListView = new app.ListView(frontEndProjects);
+    app.fullStackListView = new app.ListView(fullStackProjects);
 });

@@ -8,7 +8,9 @@ var app = app || {};
 
         initialize: function(initialProjects) {
             this.collection = new app.ProjectList(initialProjects);
-            this.render();
+                this.render();
+                this.renderFullStack();
+
         },
 
         // render list by rendering each project in its collection
@@ -27,6 +29,14 @@ var app = app || {};
             });
 
             this.$el.append(projectView.render().el);
+        },
+
+        // render full stack projects by calling full stack's list view.
+        renderFullStack: function() {
+            this.collection.each(function(item) {
+                this.model.destroy();
+                app.fullStackListView();
+            }, this);
         }
     });
 
