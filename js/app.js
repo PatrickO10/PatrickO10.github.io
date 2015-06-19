@@ -33,8 +33,24 @@ $(function() {
         title: 'Movie Trailers',
         image: 'http://placehold.it/300x200',
         url: 'https://patricko10.github.io'
+    }, {
+        title: 'Movie Trailers',
+        image: 'http://placehold.it/300x200',
+        url: 'https://patricko10.github.io'
+    }, {
+        title: 'Movie Trailers',
+        image: 'http://placehold.it/300x200',
+        url: 'https://patricko10.github.io'
+    }, {
+        title: 'Movie Trailers',
+        image: 'http://placehold.it/300x200',
+        url: 'https://patricko10.github.io'
+    }, {
+        title: 'Movie Trailers',
+        image: 'http://placehold.it/300x200',
+        url: 'https://patricko10.github.io'
     }];
 
     app.frontEndListView = new app.ListView(frontEndProjects);
-    app.fullStackListView = new app.ListView(fullStackProjects);
+    app.fullStackListView = new app.FSListView(fullStackProjects);
 });

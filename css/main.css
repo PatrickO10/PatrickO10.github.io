@@ -32,7 +32,7 @@ a:visited {
 /* Primary Header */
 
 .primary-header {
-    background: #c6dbed url(../images/logo.png) top center / 100% 100% no-repeat;
+    background: #eaf3fa;
     color: rgb(157, 5, 5);
 }
 
@@ -70,6 +70,10 @@ main {
 
 .projects {
     margin: 2em;
+}
+
+.fs-projects {
+    background: red;
 }
 
 .card {

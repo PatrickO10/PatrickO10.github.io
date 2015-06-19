@@ -12,8 +12,7 @@ var app = app || {};
             this.$el.html(this.template(this.model.attributes));
 
             return this;
-        },
+        }
     });
 
 })(jQuery);
-
