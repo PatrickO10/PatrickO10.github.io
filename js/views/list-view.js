@@ -6,22 +6,19 @@ var app = app || {};
     app.ListView = Backbone.View.extend({
         el: '.projects',
         events: {
-            'click #fe-btn': 'showFE',
-            'click #fs-btn': 'showFS'
+            'click #fe-btn': 'clickedFEBtn',
+            'click #fs-btn': 'clickedFSBtn'
         },
 
-        initialize: function(initialProjects) {
-            this.collection = new app.ProjectList(initialProjects);
+        initialize: function(feProjects, fsProjects) {
+            this.feProjects = feProjects;
+            this.fsProjects = fsProjects;
+            this.collection = new app.ProjectList(this.feProjects);
             this.render();
-            this.$fe = $('.projects');
-            this.$fs = $('.fs-projects');
-
         },
 
         // render list by rendering each project in its collection
         render: function() {
-
-            this.appendBtn();
             this.collection.each(function(item) {
                 this.renderProject(item);
             }, this);
@@ -37,33 +34,21 @@ var app = app || {};
 
             this.$el.append(projectView.render().el);
         },
-        hide: function() {
-            this.$el.hide();
-        },
-        showFE: function() {
-            console.log('FE')
-            this.$fs.hide();
-            this.$fe.show();
-        },
-        showFS: function() {
-            console.log('FS');
-            this.$fe.hide();
-            this.hide();
-            this.$fs.show();
-            this.$('.fs-projects').show();
-        },
-        showItNow: function() {
-            this.showFS();
-        },
-        appendBtn: function() {
-            $('#feature').append('<button id="fe-btn" class="text-primary">Front-End Projects</button>');
-        }
-    });
 
-    app.FSListView = app.ListView.extend({
-        el: '.fs-projects',
-        appendBtn: function() {
-            $('#feature').append('<button id="fs-btn" class="text-primary">Full Stack Projects</button>');
+        // 'this' is handling DOM element
+        clickedFEBtn: function(event) {
+            // Removes existing articles.
+            $('article').remove();
+            this.collection.set(this.feProjects);
+            this.render();
+        },
+
+        // 'this' is handling DOM element
+        clickedFSBtn: function(event) {
+            // Removes existing articles.
+            $('article').remove();
+            this.collection.set(this.fsProjects);
+            this.render();
         }
     });
 

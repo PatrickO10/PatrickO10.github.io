@@ -51,6 +51,6 @@ $(function() {
         url: 'https://patricko10.github.io'
     }];
 
-    app.frontEndListView = new app.ListView(frontEndProjects);
-    app.fullStackListView = new app.FSListView(fullStackProjects);
+    app.ListView = new app.ListView(frontEndProjects, fullStackProjects);
+    //app.fullStackListView = new app.FSListView(fullStackProjects);
 });

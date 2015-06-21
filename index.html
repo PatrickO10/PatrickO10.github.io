@@ -17,16 +17,20 @@
         <nav class="row">
             <ul class="col-xs-12">
                 <a href="#about">
-                    <li class="menu-item">About Me</li>
+                    <li class="menu-item">
+                        <i class="glyphicon glyphicon-info-sign"></i> About Me
+                    </li>
                 </a>
                 <a href="#feature">
-                    <li class="menu-item">Projects</li>
+                    <li class="menu-item"><i class="glyphicon glyphicon-briefcase"></i> Projects
+                    </li>
                 </a>
                 <a href="#contact">
-                    <li class="menu-item">Contact</li>
+                    <li class="menu-item"><i class="glyphicon glyphicon-phone"></i> Contact
+                    </li>
                 </a>
                 <a href="#">
-                    <li class="menu-item">Blog</li>
+                    <li class="menu-item"><i class="glyphicon glyphicon-book"></i>Blog</li>
                 </a>
             </ul>
         </nav>
@@ -59,34 +63,21 @@
             <!-- /section -->
         </header>
         <!-- /header -->
-        <!-- main -->
-        <main class="row">
+        <section class="projects row">
             <header id="feature" class="col-md-12 featured-header">
                 <h2>Featured Works</h2>
+                <button id="fe-btn" class="text-primary"><i class="glyphicon glyphicon-knight"></i>Front-End Projects</button>
+                <button id="fs-btn" class="text-primary"><i class="glyphicon glyphicon-queen"></i>Full Stack Projects</button>
             </header>
-            <!-- /header -->
-            <div class="col-md-12">
-                <section class="text-center projects row">
-                </section>
-            </div>
-            <div class="col-md-12">
-                <section class="text-center fs-projects row">
-                </section>
-            </div>
-            <script id="switch-btns" type="text-template">
-                <button id="fe-btn" class="text-primary">Front-End Projects</button>
-                <button id="fs-btn" class="text-primary">Full Stack Projects</button>
-            </script>
-            <script id="project-template" type="text-template">
-                <img src=<%- image %> alt="
-                <%- title %> image" class="center-block img-responsive img-size">
-                    <h4><%- title %></h4>
-                    <a href=<%- url %> target="_blank">
+        </section>
+        <script id="project-template" type="text-template">
+            <img src=<%- image %> alt="
+            <%- title %> image" class="center-block img-responsive img-size">
+                <h4><%- title %></h4>
+                <a href=<%- url %> target="_blank">
                     LINK
                 </a>
-            </script>
-        </main>
-        <!-- main end -->
+        </script>
         <!-- footer -->
         <footer id="contact" class="row grey">
             <div class="col-md-12">
