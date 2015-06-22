@@ -31,7 +31,7 @@
                     </li>
                 </a>
                 <a href="#">
-                    <li class="menu-item"><i class="glyphicon glyphicon-book"></i>Blog</li>
+                    <li class="menu-item"><i class="glyphicon glyphicon-book"></i> Blog</li>
                 </a>
             </ul>
         </nav>
@@ -84,13 +84,20 @@
             <div class="col-md-12">
                 <h3 class="grey">Contact</h3>
                 <hr>
-                <ul>
+                <ul class="contact-ul">
+                    <!--
                     <li class="menu-item"><a href="mailto:patrickorth10@gmail.com"><i class="ion-email footer-item"></i></a></li>
                     <li class="menu-item"><a href="https://www.linkedin.com/pub/patrick-orth/97/91a/221" target="_blank"><i class="ion-social-linkedin footer-item"></i></a></li>
                     <li class="menu-item"><a href="https://github.com/PatrickO10" target="_blank"><i class="ion-social-github footer-item"></i></a></li>
                     <li class="menu-item"><a href="https://twitter.com/patrick_orth" target="_blank"><i class="ion-social-twitter footer-item"></i></a></li>
+                -->
                 </ul>
             </div>
+            <script id="contact-template" type="text-template">
+                <a href="<%- url %>">
+                <i class="ion-<%- ion %> footer-item"></i>
+            </a>
+            </script>
         </footer>
         <!-- footer end -->
     </div>
@@ -101,6 +108,10 @@
     <script src="js/collections/project-list.js"></script>
     <script src="js/views/project-view.js"></script>
     <script src="js/views/list-view.js"></script>
+    <script src="js/models/contact.js"></script>
+    <script src="js/collections/contact-list.js"></script>
+    <script src="js/views/contact-view.js"></script>
+    <script src="js/views/contact-list-view.js"></script>
     <script src="js/app.js"></script>
 </body>
 

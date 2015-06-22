@@ -51,6 +51,21 @@ $(function() {
         url: 'https://patricko10.github.io'
     }];
 
-    app.ListView = new app.ListView(frontEndProjects, fullStackProjects);
+    var myContacts = [{
+        url: 'mailto:patrickorth10@gmail.com',
+        ion: 'mail'
+    }, {
+        url: 'https://www.linkedin.com/pub/patrick-orth/97/91a/221',
+        ion: 'social-linkedin'
+    }, {
+        url: 'https://github.com/PatrickO10',
+        ion: 'social-github'
+    }, {
+        url: 'https://twitter.com/patrick_orth',
+        ion: 'social-twitter'
+    }];
+
+    app.listView = new app.ListView(frontEndProjects, fullStackProjects);
     //app.fullStackListView = new app.FSListView(fullStackProjects);
+    app.contactLV = new app.ContactListView(myContacts);
 });
