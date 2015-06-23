@@ -31,29 +31,29 @@ $(function() {
 
     var fullStackProjects = [{
         title: 'Movie Trailers',
-        image: 'http://placehold.it/300x200',
+        image: 'images/movie_trail.png',
+        url: 'https://patricko10.github.io/movie_trailers'
+    }, {
+        title: 'Tournament Planner',
+        image: 'images/chess.jpg',
+        url: 'https://github.com/PatrickO10/tournament_planner'
+    }, {
+        title: 'Item Catalog',
+        image: 'images/construction.jpg',
         url: 'https://patricko10.github.io'
     }, {
-        title: 'Movie Trailers',
-        image: 'http://placehold.it/300x200',
+        title: 'Conference Organization App',
+        image: 'images/construction.jpg',
         url: 'https://patricko10.github.io'
     }, {
-        title: 'Movie Trailers',
-        image: 'http://placehold.it/300x200',
-        url: 'https://patricko10.github.io'
-    }, {
-        title: 'Movie Trailers',
-        image: 'http://placehold.it/300x200',
-        url: 'https://patricko10.github.io'
-    }, {
-        title: 'Movie Trailers',
-        image: 'http://placehold.it/300x200',
+        title: 'Linux Server Configuration',
+        image: 'images/construction.jpg',
         url: 'https://patricko10.github.io'
     }];
 
     var myContacts = [{
         url: 'mailto:patrickorth10@gmail.com',
-        ion: 'mail'
+        ion: 'email'
     }, {
         url: 'https://www.linkedin.com/pub/patrick-orth/97/91a/221',
         ion: 'social-linkedin'

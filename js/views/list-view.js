@@ -22,16 +22,15 @@ var app = app || {};
             this.collection.each(function(item) {
                 this.renderProject(item);
             }, this);
+            this.animateProjects();
         },
 
         // render a project by creating a ProjectView and appending the
         // element it renders to the list' element
         renderProject: function(item, projElement) {
-
             var projectView = new app.ProjectView({
                 model: item
             });
-
             this.$el.append(projectView.render().el);
         },
 
@@ -49,6 +48,12 @@ var app = app || {};
             $('article').remove();
             this.collection.set(this.fsProjects);
             this.render();
+        },
+        animateProjects: function() {
+            // Animate the projects when a render() is called.
+            $('.card').hide().first().show("fast", function showNext() {
+                $(this).next("article").show("fast", showNext);
+            });
         }
     });
 
