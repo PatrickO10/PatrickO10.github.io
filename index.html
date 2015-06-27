@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="My profile page.">
     <title>Patrick's Profile</title>
+    <!--
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">-->
+-->
+    <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="dist/css/main.min.css">
 </head>
 
 <body>
@@ -43,7 +45,7 @@
                 <h4 class="title-font text-center">Front-End/Full Stack Wizard in Training</h4>
                 <div class="row">
                     <figure class="col-xs-12 col-sm-4 text-center">
-                        <img class="img-responsive center-block circle" src="images/headshot.jpg" alt="my profile picture">
+                        <img class="img-responsive center-block circle" src="dist/images/headshot.png" alt="my profile picture">
                         <figcaption>Hey! That's me!
                             <br>Why am I in a circle?</figcaption>
                     </figure>
@@ -75,22 +77,20 @@
             <img src=<%- image %> alt="
             <%- title %> image" class="center-block img-responsive img-size">
                 <h4><%- title %></h4>
-                <% if (demo.length > 0) { %>
+                <% if (demo.length> 0) { %>
                     <a href=<%- demo %> target="_blank">
                         DEMO
                     </a>
                     <span>|</span>
                     <% } %>
-                <% if (source.length > 0) { %>
-                    <a href=<%- source %> target="_blank">
+                        <% if (source.length> 0) { %>
+                            <a href=<%- source %> target="_blank">
                         SOURCE
                     </a>
-                <% } %>
-                <% if (source.length < 1 && demo.length < 1) { %>
-                    <a href="https://www.github.com/PatrickO10" target="_blank">
-                        Source Not Available Yet
-                    </a>
-                <% } %>
+                            <% } %>
+                                <% if (source.length < 1 && demo.length < 1) { %>
+                                    Source Not Available Yet
+                                    <% } %>
         </script>
         <!-- footer -->
         <footer id="contact" class="row grey">
@@ -111,15 +111,7 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/underscore/underscore-min.js"></script>
     <script src="bower_components/backbone/backbone.js"></script>
-    <script src="js/models/project.js"></script>
-    <script src="js/collections/project-list.js"></script>
-    <script src="js/views/project-view.js"></script>
-    <script src="js/views/list-view.js"></script>
-    <script src="js/models/contact.js"></script>
-    <script src="js/collections/contact-list.js"></script>
-    <script src="js/views/contact-view.js"></script>
-    <script src="js/views/contact-list-view.js"></script>
-    <script src="js/app.js"></script>
+    <script src="dist/js/main.min.js"></script>
 </body>
 
 </html>

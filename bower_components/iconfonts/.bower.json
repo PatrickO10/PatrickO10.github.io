@@ -1,0 +1,26 @@
+{
+  "name": "iconfonts",
+  "version": "0.7.0",
+  "authors": [
+    "Rico Sta. Cruz <hi@ricostacruz.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "homepage": "https://github.com/rstacruz/iconfonts",
+  "_release": "0.7.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.7.0",
+    "commit": "c70cff342078c1c8a44b8ffe87ed1b3a4c0e04d3"
+  },
+  "_source": "git://github.com/rstacruz/iconfonts.git",
+  "_target": "~0.7.0",
+  "_originalSource": "iconfonts",
+  "_direct": true
+}

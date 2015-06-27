@@ -120,7 +120,7 @@ footer {
 .footer-item {
     transition: all 0.5s ease;
     font-size: 1.75em;
-    margin: 0 1.3em;
+    margin: 0 0.5em;
 }
 /* Font Sizes */
 
@@ -144,6 +144,7 @@ h3 {
 @media only screen and (max-width: 670px) {
     .menu-item {
         font: 1em "Open Sans" Serif;
+        padding: 1em 1em;
     }
     .card {
         max-width: 100%;
@@ -157,8 +158,5 @@ h3 {
     }
     .title-font {
         font-size: 1em;
-    }
-    .footer-item {
-        margin: 0;
     }
 }
