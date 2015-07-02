@@ -82,8 +82,8 @@ main {
     color: #fff;
 }
 
-.fs-projects {
-    background: red;
+.proj-p {
+    display: none;
 }
 
 .card {
@@ -97,8 +97,30 @@ main {
     background: orange;
 }
 
+.card:hover .proj-p {
+    display: block;
+    color: #fff;
+    text-align: left;
+}
+
+.card:hover span {
+  color: #294860;
+}
+
 .card:last-of-type {
     margin-right: 0;
+}
+
+.text-medium {
+  font: 300 2em solid;
+}
+
+.text-large {
+  font: 700 2em solid;
+}
+
+.bar {
+  padding: 1em;
 }
 
 .img-size {
@@ -155,5 +177,8 @@ h3 {
     }
     .title-font {
         font-size: 1em;
+    }
+    .bar {
+      display: none;
     }
 }

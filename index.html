@@ -67,28 +67,31 @@
         <section class="projects row">
             <header id="feature" class="col-md-12 featured-header">
                 <h2>Featured Works</h2>
-                <button id="fe-btn" class="text-primary"><i class="glyphicon glyphicon-knight"></i>Front-End Projects</button>
-                <button id="fs-btn" class="text-primary"><i class="glyphicon glyphicon-queen"></i>Full Stack Projects</button>
+                <button id="fe-btn" class="btn btn-default text-primary"><i class="glyphicon glyphicon-knight"></i>Front-End Projects</button>
+                <button id="fs-btn" class="btn btn-default text-primary"><i class="glyphicon glyphicon-queen"></i>Full Stack Projects</button>
             </header>
         </section>
         <script id="project-template" type="text-template">
             <img src=<%- image %> alt="
             <%- title %> image" class="center-block img-responsive img-size">
-                <h4><%- title %></h4>
+                <h4 class="text-large"><%- title %></h4>
+                <span class="text-medium">
                 <% if (demo.length> 0) { %>
                     <a href=<%- demo %> target="_blank">
                         DEMO
                     </a>
-                    <span>|</span>
+                    <span class="bar">|</span>
                     <% } %>
                         <% if (source.length> 0) { %>
                             <a href=<%- source %> target="_blank">
-                        SOURCE
+                      SOURCE
                     </a>
                             <% } %>
                                 <% if (source.length < 1 && demo.length < 1) { %>
                                     Source Not Available Yet
                                     <% } %>
+                  </span>
+                                    <p class="proj-p"><%- description %></p>
         </script>
         <!-- footer -->
         <footer id="contact" class="row grey">

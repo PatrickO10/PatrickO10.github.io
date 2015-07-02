@@ -8,6 +8,7 @@ var app = app || {};
         defaults: {
             title: '',
             image: '',
+            description: '',
             demo: '',
             source: ''
         },
