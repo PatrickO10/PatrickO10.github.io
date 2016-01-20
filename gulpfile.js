@@ -13,11 +13,10 @@ var gulp = require('gulp'),
     concat = require('gulp-concat');
 
 var jsOrder = [
-    'js/models/project.js',
-    'js/collections/project-list.js',
-    'js/views/project-view.js',
-    'js/views/list-view.js',
-    'js/app.js'
+    'js/models/*.js',
+    'js/collections/*.js',
+    'js/views/*.js',
+    'js/**/*.js'
 ];
 
 // Styles
@@ -77,5 +76,4 @@ gulp.task('default', ['styles', 'scripts'], function() {
     browserSync.init({
         server: '.'
     });
-
 });

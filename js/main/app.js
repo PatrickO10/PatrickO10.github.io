@@ -34,12 +34,7 @@ $(function() {
 	}, {
 		title: 'Interactive Resume',
 		image: 'dist/images/irimg.png',
-		description: 'I enjoyed playing around with Google Map.
-
-			What made my project unique was when you click on an icon the background changes to a street view image and then the pano appears to the right of the map.
-
-			I also added a recursive
-		function to that process.Sometimes there wouldn\ 't be a street view for the pano if the radius wasn\'t large enough, so I made a function call itself increasing the search area until it found one.',
+		description: 'I enjoyed playing around with Google Map. What made my project unique was when you click on an icon the background changes to a street view image and then the pano appears to the right of the map. I also added a recursive function to that process.Sometimes there wouldn\'t be a street view for the pano if the radius wasn\'t large enough, so I made a function call itself increasing the search area until it found one.',
 		demo: 'https://patricko10.github.io/interactive-resume',
 		source: 'https://github.com/PatrickO10/interactive-resume'
 	}, {
