@@ -1,16 +1,24 @@
 var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     minifycss = require('gulp-minify-css'),
+    browserSync = require('browser-sync').create(),
     jshint = require('gulp-jshint'),
     rename = require('gulp-rename'),
     uglify = require('gulp-uglify'),
-    notify = require('gulp-notify'),
     imagemin = require('gulp-imagemin'),
     cache = require('gulp-cache'),
     imageResize = require('gulp-image-resize'),
     imageminPngquant = require('imagemin-pngquant'),
     del = require('del'),
     concat = require('gulp-concat');
+
+var jsOrder = [
+    'js/models/project.js',
+    'js/collections/project-list.js',
+    'js/views/project-view.js',
+    'js/views/list-view.js',
+    'js/app.js'
+];
 
 // Styles
 gulp.task('styles', function() {
@@ -23,25 +31,19 @@ gulp.task('styles', function() {
             suffix: '.min'
         }))
         .pipe(minifycss())
-        .pipe(gulp.dest('dist/css'))
-        .pipe(notify({
-            message: 'Styles task complete'
-        }));
+        .pipe(gulp.dest('dist/css'));
 });
 
 // Scripts
 gulp.task('scripts', function() {
-    return gulp.src('js/**/*.js')
+    return gulp.src(jsOrder)
         .pipe(concat('main.js'))
         .pipe(gulp.dest('dist/js'))
         .pipe(rename({
             suffix: '.min'
         }))
         .pipe(uglify())
-        .pipe(gulp.dest('dist/js'))
-        .pipe(notify({
-            message: 'Scripts task complete'
-        }));
+        .pipe(gulp.dest('dist/js'));
 });
 
 // Images
@@ -65,19 +67,15 @@ gulp.task('clean', function(cb) {
     del(['dist/images', 'dist/js', 'dist/css'], cb);
 });
 
-gulp.task('default', ['clean'], function() {
-    gulp.start('styles', 'scripts', 'images');
-});
 
-gulp.task('watch', function() {
-
-  // Watch .css files
-  gulp.watch('css/*.css', ['styles']);
-
-  // Watch .js files
-  gulp.watch('js/**/*.js', ['scripts']);
-
-  // Watch image files
-  gulp.watch('images/*.png', ['images']);
+gulp.task('default', ['styles', 'scripts'], function() {
+    gulp.watch('css/**/*.css', ['styles']);
+    gulp.watch('js/**/*.js', ['scripts']);
+    gulp.watch('images/*.png', ['images']);
+    gulp.watch('index.html').on('change', browserSync.reload);
+    gulp.watch('./dist/css/*.css').on('change', browserSync.reload);
+    browserSync.init({
+        server: '.'
+    });
 
 });

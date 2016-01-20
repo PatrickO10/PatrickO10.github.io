@@ -2,117 +2,116 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="My profile page.">
-    <title>Patrick's Profile</title>
-    <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="dist/css/main.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="My profile page.">
+	<title>Patrick's Profile</title>
+	<link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="dist/css/main.min.css">
 </head>
 
 <body>
-    <div class="container-fluid">
-        <!-- nav -->
-        <nav class="row">
-            <ul class="col-xs-12">
-                <a href="#about">
-                    <li class="menu-item">
-                        <i class="glyphicon glyphicon-info-sign"></i> About Me
-                    </li>
-                </a>
-                <a href="#feature">
-                    <li class="menu-item"><i class="glyphicon glyphicon-briefcase"></i> Projects
-                    </li>
-                </a>
-                <a href="#contact">
-                    <li class="menu-item"><i class="glyphicon glyphicon-phone"></i> Contact
-                    </li>
-                </a>
-                <a href="http://findingthingsout.blogspot.com/" target="_blank">
-                    <li class="menu-item"><i class="glyphicon glyphicon-book"></i> Blog</li>
-                </a>
-            </ul>
-        </nav>
-        <!-- /nav -->
-        <!-- primary header -->
-        <header id="about" class="row primary-header">
-            <section class="col-xs-12">
-                <h1 class="name-font text-center">Patrick Orth</h1>
-                <h4 class="title-font text-center">Front-End/Full Stack Wizard in Training</h4>
-                <div class="row">
-                    <figure class="col-xs-12 col-sm-4 text-center">
-                        <img class="img-responsive center-block circle" src="dist/images/headshot.png" alt="my profile picture">
-                        <figcaption>Hey! That's me!
-                            <br>Why am I in a circle?</figcaption>
-                    </figure>
-                    <div class="col-xs-12 col-sm-4 text-primary">
-                        <h3>About Me:</h3>
-                        <p>I’m Patrick Orth, a web developer, who has two passions: building things and learning.</p>
-                        <p>I’m passionate about web development because it allows me to solve problems creatively, think differently, build websites, and have fun learning every day.
-                        </p>
-                        <p>When I’m not busy remodeling a house to sell or reviewing student projects, I’m learning Full Stack web development through Udacity, learning tech skills industry leaders want.</p>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 text-primary">
-                        <h3>Technical Skills:</h3>
-                        <p><strong>Languages</strong>: JavaScript, HTML5, CSS3, Python.</p>
-                        <p><strong>Frameworks/Libraries</strong>: jQuery, Knockout.js (MVVM), Backbone.js (MV*), Bootstrap, Jasmine, Gulp.</p>
-                        <p><strong>Other</strong>: Git/GitHub, Sublime, SQL, Chrome DevTools</p>
-                    </div>
-                </div>
-            </section>
-            <!-- /section -->
-        </header>
-        <!-- /header -->
-        <section class="projects row">
-            <header id="feature" class="col-md-12 featured-header">
-                <h2>Featured Works</h2>
-                <button id="fe-btn" class="btn btn-default text-primary"><i class="glyphicon glyphicon-knight"></i>Front-End Projects</button>
-                <button id="fs-btn" class="btn btn-default text-primary"><i class="glyphicon glyphicon-queen"></i>Full Stack Projects</button>
-            </header>
-        </section>
-        <script id="project-template" type="text-template">
-            <img src=<%- image %> alt="
-            <%- title %> image" class="center-block img-responsive img-size">
-                <h4 class="text-large"><%- title %></h4>
-                <span class="text-medium">
-                <% if (demo.length> 0) { %>
+	<div class="container-fluid">
+		<!-- nav -->
+		<nav class="row">
+			<ul class="col-xs-12">
+				<a href="#about">
+					<li class="menu-item">
+						<i class="glyphicon glyphicon-info-sign"></i> About Me
+					</li>
+				</a>
+				<a href="#feature">
+					<li class="menu-item"><i class="glyphicon glyphicon-briefcase"></i> Projects &lt;b&gt;
+					</li>
+				</a>
+				<a href="#contact">
+					<li class="menu-item"><i class="glyphicon glyphicon-phone"></i> Contact
+					</li>
+				</a>
+				<a href="http://findingthingsout.blogspot.com/" target="_blank">
+					<li class="menu-item"><i class="glyphicon glyphicon-book"></i> Blog</li>
+				</a>
+			</ul>
+		</nav>
+		<!-- /nav -->
+		<!-- primary header -->
+		<header id="about" class="row primary-header">
+			<section class="col-xs-12">
+				<h1 class="name-font text-center">Patrick Orth</h1>
+				<h4 class="title-font text-center">Front-End/Full Stack Wizard in Training</h4>
+				<div class="row">
+					<figure class="col-xs-12 col-sm-4 text-center">
+						<img class="img-responsive center-block circle" src="dist/images/headshot.png" alt="my profile picture">
+						<figcaption>Hey! That's me!
+							<br>Why am I in a circle?</figcaption>
+					</figure>
+					<div class="col-xs-12 col-sm-4 text-primary">
+						<h3>About Me:</h3>
+						<p>I’m Patrick Orth, a web developer, who has two passions: building things and learning.</p>
+						<p>I’m passionate about web development because it allows me to solve problems creatively, think differently, build websites, and have fun learning every day.
+						</p>
+						<p>When I’m not busy remodeling a house to sell or reviewing student projects, I’m learning Full Stack web development through Udacity, learning tech skills industry leaders want.</p>
+					</div>
+					<div class="col-xs-12 col-sm-4 text-primary">
+						<h3>Technical Skills:</h3>
+						<p><strong>Languages</strong>: JavaScript, HTML5, CSS3, Python.</p>
+						<p><strong>Frameworks/Libraries</strong>: jQuery, Knockout.js (MVVM), Backbone.js (MV*), Bootstrap, Jasmine, Gulp.</p>
+						<p><strong>Other</strong>: Git/GitHub, Sublime, SQL, Chrome DevTools</p>
+					</div>
+				</div>
+			</section>
+			<!-- /section -->
+		</header>
+		<!-- /header -->
+		<section class="projects row">
+			<header id="feature" class="col-md-12 featured-header">
+				<h2>Featured Works</h2>
+				<button id="fe-btn" class="btn btn-default text-primary"><i class="glyphicon glyphicon-knight"></i>Front-End Projects</button>
+				<button id="fs-btn" class="btn btn-default text-primary"><i class="glyphicon glyphicon-queen"></i>Full Stack Projects</button>
+			</header>
+		</section>
+		<script id="project-template" type="text-template">
+			<img src=<%- image %> alt="
+			<%- title %> image" class="center-block img-responsive img-size">
+				<h4 class="text-large"><%- title %></h4>
+				<span class="text-medium">
+                <% if (demo.length) { %>
                     <a href=<%- demo %> target="_blank">
                         DEMO
                     </a>
                     <span class="bar">|</span>
-                    <% } %>
-                        <% if (source.length> 0) { %>
-                            <a href=<%- source %> target="_blank">
+				<% } %>
+					<% if (source.length) { %>
+						<a href=<%- source %> target="_blank">
                       SOURCE
                     </a>
-                            <% } %>
-                                <% if (source.length < 1 && demo.length < 1) { %>
-                                    Source Not Available Yet
-                                    <% } %>
-                  </span>
-                                    <p class="proj-p"><%- description %></p>
-        </script>
-        <!-- footer -->
-        <footer id="contact" class="row grey">
-            <div class="col-md-12">
-                <h3 class="grey">Contact</h3>
-                <hr>
-                <ul class="contact-ul">
-                </ul>
-            </div>
-            <script id="contact-template" type="text-template">
-                <a href="<%- url %>" target="_blank">
+						<% } %>
+							<% if (source.length < 1 && demo.length < 1) { %>
+								Source Not Available Yet
+								<% } %>
+									</span>
+		</script>
+		<!-- footer -->
+		<footer id="contact" class="row grey">
+			<div class="col-md-12">
+				<h3 class="grey">Contact</h3>
+				<hr>
+				<ul class="contact-ul">
+				</ul>
+			</div>
+			<script id="contact-template" type="text-template">
+				<a href="<%- url %>" target="_blank">
                     <i class="ion-<%- ion %> footer-item"></i>
                 </a>
-            </script>
-        </footer>
-        <!-- footer end -->
-    </div>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/underscore/underscore-min.js"></script>
-    <script src="bower_components/backbone/backbone-min.js"></script>
-    <script src="dist/js/main.min.js"></script>
+			</script>
+		</footer>
+		<!-- footer end -->
+	</div>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/underscore/underscore-min.js"></script>
+	<script src="bower_components/backbone/backbone-min.js"></script>
+	<script src="dist/js/main.min.js"></script>
 </body>
 
 </html>
