@@ -4,13 +4,15 @@ $(function() {
 	'use strict';
 
 	var frontEndProjects = [{
+		title: 'Meet-Up Event Planner',
+		image: 'dist/images/meetuppic.png',
+		description: 'Meet-Up Event Planner',
+		demo: 'https://patricko10.github.io/meetUp',
+		source: 'https://github.com/PatrickO10/meetUp'
+	}, {
 		title: 'Neighborhood Map',
 		image: 'dist/images/nhm.png',
-		description: ' At first I was provided with a design mockup in the form of a PDF-file, I replicated the design using HTML and CSS.
-
-			After finishing my nanodegree I upgraded my profile,
-		using Bootstrap and Backbone.js.I had a lot of fun adding front - end and full stack projects to the page.
-		',
+		description: 'Neighborhood Map',
 		demo: 'https://patricko10.github.io/neighborhood-map',
 		source: 'https://github.com/PatrickO10/neighborhood-map'
 	}, {
